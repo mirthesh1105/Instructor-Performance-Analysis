@@ -1,9 +1,11 @@
 # Instructor Performance and Course Quality Evaluation on EduPro
 
 ## Author details
-Author: Mirthesh. M
-E-mail: ``` mirtheshmurugaiah1105@gmail.com ```
-Employer: Unified Mentor
+###### Author: Mirthesh. M
+
+###### E-mail: ``` mirtheshmurugaiah1105@gmail.com ```
+
+###### Employer: Unified Mentor
 
 ---
 
