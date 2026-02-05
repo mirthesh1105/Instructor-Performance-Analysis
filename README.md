@@ -2,14 +2,18 @@
 
 ## Author details
 Author: Mirthesh. M
-E-mail: mirtheshmurugaiah1105@gmail.com
+E-mail: ``` mirtheshmurugaiah1105@gmail.com ```
 Employer: Unified Mentor
+
+---
 
 ## Overview
 
 This project analyzes instructor performance on an online education platform by combining course data, instructor attributes, and student feedback. The goal is to understand how much instructor quality influences course ratings and whether experience or course category plays a role in perceived teaching effectiveness.
 
 Instead of treating ratings as isolated scores, the project models expected course ratings using instructor and course features, then analyzes where instructors consistently over- or under-perform.
+
+---
 
 ### Questions Addressed
 
@@ -24,6 +28,8 @@ Inferred through prediction error sensitivity to instructor features.
 
 #### How evenly is teaching performance distributed across the platform?
 Evaluated using summary statistics and a Gini coefficient over ratings.
+
+---
 
 ### Dataset
 
@@ -40,6 +46,8 @@ Enrollment and course rating information
 
 All sheets are merged using TeacherID and CourseID.
 
+---
+
 ### Approach
 
 1. Merge instructor, course, and transaction data
@@ -51,6 +59,8 @@ All sheets are merged using TeacherID and CourseID.
 
 The model is not used for deployment or recommendation, but as an analytical tool to study instructor impact.
 
+---
+
 ### Model Details
 - Type: Feed-forward neural network
 - Loss: Mean Squared Error
@@ -59,6 +69,8 @@ The model is not used for deployment or recommendation, but as an analytical too
 
 Regularization is handled using dropout layers to reduce overfitting.
 
+---
+
 ### Repository Structure
 ```
 ├── data/
@@ -66,9 +78,11 @@ Regularization is handled using dropout layers to reduce overfitting.
 ├── models/
 │   └── instructor_performance_model.h5
 ├── src/
-│   └── train_model.py
+│   └── train_and_analyze.py
 └── README.md
 ```
+
+---
 
 ### How to Run
 
@@ -79,15 +93,19 @@ pip install requirements.txt
 
 2. Run the training and analysis script
 ```
-python src/train_model.py
+python src/train_and_analyze.py
 ```
 
-#### The script will:
+---
+
+### The script will:
 
 - Train the model
 - Print evaluation metrics
 - Output instructor-level performance analysis
 - Save the trained model to the models/ directory
+
+---
 
 ### Output and Interpretation
 
@@ -100,16 +118,22 @@ python src/train_model.py
 - Distribution statistics of instructor ratings
 These outputs are intended for analysis and insight, not automated decision-making.
 
+---
+
 ### Limitations
 - Ratings are subjective and may be influenced by factors outside instructor control
 - The dataset does not capture student background or expectations
 - Model predictions are used for comparison, not as ground truth
+
+---
 
 ### Future Improvements
 - Add temporal analysis of instructor performance over time
 - Include student engagement metrics
 - Extend analysis to recommendation or quality assurance systems
 - Replace Excel input with a database pipeline
+
+---
 
 ### Author Notes
 - This project was built as an applied machine learning analysis exercise, focusing on clean data handling, reasonable modeling choices, and interpretable results rather than aggressive optimization.
